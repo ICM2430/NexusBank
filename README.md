@@ -9,7 +9,7 @@
 <img src="ruta/a/la/foto1.jpg" alt="Daniel Vidal" width="250px">  
 <strong>Daniel Vidal</strong>
 
-(mini biografía)
+Ingeniero de Sistemas, con gustos en el desarrollo de videojuegos y tecnologias y adepto en la programacion de c++ y Python.
 
 <img src="ruta/a/la/foto1.jpg" alt="Diego Coronado" width="250px">  
 <strong>Diego Coronado</strong>
