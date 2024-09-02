@@ -26,10 +26,10 @@ Ingeniero de Sistemas, con gustos en el desarrollo de videojuegos y tecnologias 
 
 Estudiante de Ingeniería de Sistemas, apasionado por el diseño y la programación web, con un fuerte interés en aprender nuevas tecnologías y en el desarrollo de software.
 
-<img src="ruta/a/la/foto1.jpg" alt="Santiago Barajas" width="250px">  
+<img src="Fotos de los TeamHunters/IMG_3943.HEIC" alt="Santiago Barajas" width="250px">  
 <strong>Santiago Barajas</strong>
 
-(mini biografía)
+Estudiante de 8vo semestre de Ingenieria de Sistemas de la Pontificia Universidad Javeriana, con enfasis en creacion de empresas y negocios en internet. Interesado en el desarrollo web y de aplicaciones.
 
 ---
 
