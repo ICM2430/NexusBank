@@ -6,7 +6,7 @@
 
 ## Integrantes
 
-<img src="ruta/a/la/foto1.jpg" alt="Daniel Vidal" width="250px">  
+<img src="Fotos de los TeamHunters/Daniel Vidal.jpg" alt="Daniel Vidal" width="250px">  
 <strong>Daniel Vidal</strong>
 
 Ingeniero de Sistemas, con gustos en el desarrollo de videojuegos y tecnologias y adepto en la programacion de c++ y Python.
