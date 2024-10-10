@@ -6,16 +6,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.snaphunters.databinding.ActivityMenuBinding
+import com.example.snaphunters.databinding.ActivityProfileBinding
 
-class MenuActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMenuBinding
+    private lateinit var binding : ActivityProfileBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMenuBinding.inflate(layoutInflater)
+        binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
@@ -43,8 +43,6 @@ class MenuActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
-
 
     }
 }
