@@ -5,6 +5,8 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -28,34 +30,35 @@ class FriendsActivity : AppCompatActivity() {
 
 
 
+        // Configurar el BottomNavigationView
+
+
+        binding.bottomNavigationView.selectedItemId = R.id.friends
+
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.friends -> {
-                    val Intent = Intent(baseContext, FriendsActivity::class.java)
-                    startActivity(Intent)
                     true
                 }
                 R.id.menu -> {
                     val Intent = Intent(baseContext, MenuActivity::class.java)
                     startActivity(Intent)
-                    true
+                    false
                 }
                 R.id.maps -> {
                     val Intent = Intent(baseContext, MapsActivity::class.java)
                     startActivity(Intent)
-                    true
+                    false
                 }
                 R.id.profile -> {
                     val Intent = Intent(baseContext, ProfileActivity::class.java)
                     startActivity(Intent)
-                    true
+                    false
                 }
 
                 else -> false
             }
         }
-
-
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
             updateUI()
         } else {
@@ -78,5 +81,11 @@ class FriendsActivity : AppCompatActivity() {
         val projection = arrayOf(ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME_PRIMARY)
         val cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI, projection, null, null, ContactsContract.Contacts._ID + " ASC")
         adapter.changeCursor(cursor)
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.barra_navegacion, menu)
+        return true
     }
 }

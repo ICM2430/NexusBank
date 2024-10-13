@@ -1,57 +1,88 @@
 package com.example.snaphunters
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.snaphunters.databinding.ActivityRegisterBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.UserProfileChangeRequest
 
 class RegisterActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityRegisterBinding
-    private lateinit var dbHelper: DatabaseHelper
+    private lateinit var auth : FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Inicializar la base de datos
-        dbHelper = DatabaseHelper(this)
+        auth = FirebaseAuth.getInstance()
 
-        binding.btnRegister.setOnClickListener {
-            val nombre = binding.editTextText2.text.toString()
-            val apellido = binding.editTextText3.text.toString()
-            val usuario = binding.editTextText4.text.toString()
-            val correo = binding.editTextText5.text.toString()
-            val contrasena = binding.editTextTextPassword2.text.toString()
-            val diaNacimiento = binding.editTextText6.text.toString()
-            val mesNacimiento = binding.editTextText7.text.toString()
-            val anoNacimiento = binding.editTextText8.text.toString()
 
-            // Validación de campos vacíos
-            if (nombre.isEmpty() || apellido.isEmpty() || usuario.isEmpty() || correo.isEmpty() || contrasena.isEmpty()) {
-                Toast.makeText(this, "Por favor complete todos los campos", Toast.LENGTH_SHORT).show()
-            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
-                Toast.makeText(this, "Por favor ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show()
-            } else if (contrasena.length < 8) {
-                Toast.makeText(this, "La contraseña debe tener al menos 8 caracteres", Toast.LENGTH_SHORT).show()
-            } else {
-                // Verificar si el usuario o correo ya existen
-                val userExists = dbHelper.checkUserOrEmailExists(usuario, correo)
-                if (userExists) {
-                    Toast.makeText(this, "El usuario o correo ya existen", Toast.LENGTH_SHORT).show()
-                } else {
-                    // Guardar el usuario en la base de datos
-                    val result = dbHelper.addUser(nombre, apellido, usuario, correo, contrasena, "$diaNacimiento/$mesNacimiento/$anoNacimiento")
-                    if (result > 0) {
-                        Toast.makeText(this, "Usuario registrado exitosamente", Toast.LENGTH_SHORT).show()
-                        val intentWelcome = Intent(this, WelcomeActivity::class.java)
-                        startActivity(intentWelcome)
-                    } else {
-                        Toast.makeText(this, "Error al registrar el usuario", Toast.LENGTH_SHORT).show()
-                    }
-                }
-            }
+        binding.btnRegister.setOnClickListener(){
+            validateForm(binding.txtEmail.text.toString(), binding.txtPassword.text.toString())
+            crearUsuario(binding.txtEmail.text.toString(), binding.txtPassword.text.toString())
         }
     }
+
+    private fun crearUsuario(email: String, password: String){
+
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    val user = auth.currentUser
+                    user?.let {
+                        val profileUpdates = UserProfileChangeRequest.Builder()
+                            .setDisplayName("${binding.txtName.text} ${binding.txtLastName.text}")
+                            .setPhotoUri(Uri.parse("path/to/pic")) // fake uri, use Firebase Storage
+                            .build()
+                        it.updateProfile(profileUpdates)
+                        updateUI(it)
+                    }
+                } else {
+                    Toast.makeText(this, "Authentication failed: ${task.exception}", Toast.LENGTH_SHORT).show()
+                }
+            }
+    }
+
+    private fun validEmailAddress(email: String): Boolean {
+        val regex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\$"
+        return email.matches(regex.toRegex())
+    }
+
+    private fun validateForm(email: String, password: String): Boolean {
+        var valid = false
+        if (email.isEmpty()) {
+            binding.txtEmail.setError("Required!")
+        } else if (!validEmailAddress(email)) {
+            binding.txtEmail.setError("Invalid email address")
+        } else if (password.isEmpty()) {
+            binding.txtPassword.setError("Required!")
+        } else if (password.length < 6) {
+            binding.txtPassword.setError("Password should be at least 6 characters long!")
+        } else if (binding.txtName.text.isEmpty()) {
+            binding.txtName.setError("Required!")
+        }else if (binding.txtLastName.text.isEmpty()) {
+            binding.txtLastName.setError("Required!")
+        }else {
+            valid = true
+        }
+        return valid
+    }
+
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            val i = Intent(this, WelcomeActivity::class.java)
+            startActivity(i)
+        }
+    }
+
+
+
 }
