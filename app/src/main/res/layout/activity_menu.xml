@@ -8,7 +8,6 @@
     tools:context=".MenuActivity"
     android:background="@color/Azul">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -21,8 +20,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -69,5 +66,16 @@
             android:layout_weight="1"
             android:src="@drawable/paparazzi" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATS"
+                android:background="@drawable/text_background"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_gravity="bottom|center"
+                android:padding="5dp" />
+        </FrameLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
