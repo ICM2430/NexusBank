@@ -37,74 +37,34 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:layout_weightSum="3"
-        android:gravity="center">
+        android:weightSum="3">
 
-        <FrameLayout
-            android:layout_width="400dp"
-            android:layout_marginVertical="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="112dp"
+            android:layout_height="132dp"
+            android:layout_weight="1"
+            android:src="@drawable/paparazzi" />
 
-            <ImageView
-                android:id="@+id/crearPartida_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/crearpartidaimagen" />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="112dp"
+            android:layout_height="132dp"
+            android:layout_weight="1"
+            android:src="@drawable/paparazzi" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CREAR PARTIDA"
-                android:textColor="@color/black"
-
-                android:textSize="20dp"
-                android:background="@drawable/text_background"
-                android:layout_gravity="bottom|center"
-                android:textStyle="bold"
-                android:padding="5dp" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="400dp"
-            android:layout_marginVertical="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/unirsePartida_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/unirsepartidaimagen" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-               android:textSize="20dp"
-                android:padding="5dp"
-                android:text="UNIRSE A UNA\n PARTIDA"
-                android:background="@drawable/text_background"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="400dp"
-            android:layout_height="0dp"
-            android:layout_marginVertical="10dp"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/stats_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/estadisticasimagen" />
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="112dp"
+            android:layout_height="132dp"
+            android:layout_weight="1"
+            android:src="@drawable/paparazzi" />
 
             <TextView
                 android:layout_width="wrap_content"

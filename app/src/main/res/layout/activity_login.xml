@@ -71,13 +71,13 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_input"
         android:backgroundTint="@color/AmarilloSuave"
         android:ems="11"
-        android:hint="Usuario"
+        android:hint="Correo"
 
         android:inputType="text"
         android:minHeight="48dp"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.100000024" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password"
         android:textColorHint="@color/black"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
@@ -112,9 +112,9 @@
         android:paddingEnd="12dp"
         android:background="@drawable/custom_input"
         android:backgroundTint="@color/AmarilloSuave"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
         android:id="@+id/textView3"

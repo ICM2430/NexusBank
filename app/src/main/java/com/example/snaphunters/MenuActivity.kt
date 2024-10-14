@@ -2,6 +2,7 @@ package com.example.snaphunters
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,27 +18,27 @@ class MenuActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.bottomNavigationView.selectedItemId = R.id.menu
+
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.friends -> {
                     val Intent = Intent(baseContext, FriendsActivity::class.java)
                     startActivity(Intent)
-                    true
+                    false
                 }
                 R.id.menu -> {
-                    val Intent = Intent(baseContext, MenuActivity::class.java)
-                    startActivity(Intent)
                     true
                 }
                 R.id.maps -> {
                     val Intent = Intent(baseContext, MapsActivity::class.java)
                     startActivity(Intent)
-                    true
+                    false
                 }
                 R.id.profile -> {
                     val Intent = Intent(baseContext, ProfileActivity::class.java)
                     startActivity(Intent)
-                    true
+                    false
                 }
 
                 else -> false
@@ -46,5 +47,10 @@ class MenuActivity : AppCompatActivity() {
 
 
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.barra_navegacion, menu)
+        return true
     }
 }
