@@ -23,16 +23,19 @@
         android:layout_height="45dp"
         android:layout_weight="1"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="t" />
 
     <TextView
         android:id="@+id/nombre"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:textAlignment="center"
+        android:paddingStart="20dp"
+        android:textAlignment="viewStart"
         android:layout_weight="7"
+        android:textColor="@color/white"
         android:text="TextView"
-        android:gravity="center|left"
-        />
+        android:gravity="start|center_vertical" />
+
 
 </LinearLayout>

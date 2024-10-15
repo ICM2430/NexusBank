@@ -7,14 +7,21 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.snaphunters.databinding.ActivityRegisterBinding
+import com.example.snaphunters.entities.User
+import com.google.android.gms.maps.model.LatLng
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserProfileChangeRequest
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth : FirebaseAuth
+
+    private lateinit var database : FirebaseDatabase
+    private lateinit var myRef : DatabaseReference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +30,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance()
 
 
         binding.btnRegister.setOnClickListener(){
@@ -31,19 +39,27 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun crearUsuario(email: String, password: String){
-
+    private fun crearUsuario(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
                     user?.let {
-                        val profileUpdates = UserProfileChangeRequest.Builder()
-                            .setDisplayName("${binding.txtName.text} ${binding.txtLastName.text}")
-                            .setPhotoUri(Uri.parse("path/to/pic")) // fake uri, use Firebase Storage
-                            .build()
-                        it.updateProfile(profileUpdates)
-                        updateUI(it)
+                        val USERS = "users/"
+                        val userData = User()
+                        userData.name = binding.txtName.text.toString()
+                        userData.lastname = binding.txtLastName.text.toString()
+                        userData.username = binding.txtUsername.text.toString()
+                        userData.email = binding.txtEmail.text.toString()
+                        userData.location = LatLng(0.0, 0.0)
+
+                        myRef = database.getReference(USERS + it.uid)
+                        myRef.setValue(userData)
+                        val key = myRef.push().key
+                        myRef = database.getReference(USERS + key)
+                        myRef.setValue(userData)
+
+                        updateUI(user   )
                     }
                 } else {
                     Toast.makeText(this, "Authentication failed: ${task.exception}", Toast.LENGTH_SHORT).show()

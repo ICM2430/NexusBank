@@ -10,6 +10,8 @@ import com.example.snaphunters.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
@@ -18,12 +20,19 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var fingerprintHelper: FingerprintHelper
 
+    private lateinit var database : FirebaseDatabase
+    private lateinit var myRef : DatabaseReference
+
+    val Users = "users/"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = Firebase.auth
+
+
         fingerprintHelper = FingerprintHelper(this)
 
         // Verificar soporte de biometría
@@ -101,6 +110,9 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, WelcomeActivity::class.java).apply {
                 putExtra("email", it.email.toString())
             }
+
+
+
             startActivity(intent)
             finish() // Finaliza la actividad de inicio de sesión
         }
@@ -116,7 +128,11 @@ class LoginActivity : AppCompatActivity() {
     private fun signIn(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
+
+
                 updateUI(auth.currentUser)
+
+
             } else {
                 val message = task.exception?.message ?: "Error desconocido"
                 showToast(message)

@@ -16,12 +16,26 @@ import com.google.firebase.storage.FirebaseStorage
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import android.content.pm.PackageManager
+import android.graphics.BitmapFactory
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.TextView
+import androidx.activity.result.ActivityResultCallback
+import com.example.snaphunters.entities.User
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProfileBinding
     private lateinit var auth: FirebaseAuth
     private var selectedImageUri: Uri? = null
+
+    private lateinit var database : FirebaseDatabase
+    private lateinit var myRef : DatabaseReference
 
     private val getImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         if (uri != null) {
@@ -37,9 +51,23 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        checkPermission()
-
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance()
+        myRef = database.getReference("USERS")
+
+        val getContentGallery = registerForActivityResult(
+            ActivityResultContracts.GetContent(),
+            ActivityResultCallback { uri ->
+                uri?.let { loadImage(it) }
+            })
+
+
+        binding.imageView2.setOnClickListener(){
+            getImage.launch("image/*")
+        }
+
+
+
         val currentUser = auth.currentUser
 
         if (currentUser != null) {
@@ -54,31 +82,18 @@ class ProfileActivity : AppCompatActivity() {
             redirectToLogin()
         }
 
-        binding.btnChangeProfilePicture.setOnClickListener {
+        binding.imageView2.setOnClickListener {
             getImage.launch("image/*")
         }
 
         setupBottomNavigation()
     }
 
-    private fun checkPermission() {
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), REQUEST_CODE)
-        }
-    }
 
     private fun updateUI(user: FirebaseUser) {
-        binding.correo.text = user.email ?: "Correo no disponible"
-        binding.textView6.text = user.displayName ?: "Nombre no disponible" // Nombre completo
-        binding.textView7.text = user.displayName ?: "Nombre de usuario no disponible" // Nombre de usuario
+        binding.correo.text = user.email
+        readOnce()
 
-        Glide.with(this)
-            .load(user.photoUrl)
-            .placeholder(R.drawable.default_profile_icon)
-            .circleCrop()
-            .into(binding.imageView2)
-
-        binding.edad.text = "Edad: Información no disponible"
     }
 
     private fun redirectToLogin() {
@@ -152,4 +167,33 @@ class ProfileActivity : AppCompatActivity() {
     companion object {
         private const val REQUEST_CODE = 101
     }
+
+    fun readOnce() {
+        val userRef = database.getReference("users").child(auth.currentUser?.uid.toString())
+        userRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                if (snapshot.exists()) {
+                    val name = snapshot.child("name").getValue(String::class.java)
+                    val lastname = snapshot.child("lastname").getValue(String::class.java)
+                    val username = snapshot.child("username").getValue(String::class.java)
+
+                    binding.nombreUsuario.text = name + " " + lastname
+                    binding.username.text = username
+                }
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+            }
+        })
+    }
+
+
+    private fun loadImage(uri: Uri) {
+        val imageStream = contentResolver.openInputStream(uri)
+        val bitmap = BitmapFactory.decodeStream(imageStream)
+        binding.imageView2.setImageBitmap(bitmap)
+    }
+
 }

@@ -46,7 +46,13 @@ android {
 }
 
 dependencies {
-    implementation("com.github.bumptech.glide:glide:4.15.0") // Dependencia para cargar imágenes
+    implementation("com.google.android.gms:play-services-maps:18.0.2")
+    implementation("org.osmdroid:osmdroid-android:6.1.10")
+    implementation("com.github.MKergall:osmbonuspack:6.8.0")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation("com.github.bumptech.glide:glide:4.15.0")
+    implementation(libs.play.services.location)
+    implementation(libs.firebase.database.ktx) // Dependencia para cargar imágenes
     kapt("com.github.bumptech.glide:compiler:4.15.0") // Procesador de anotaciones para Glide
     implementation("com.google.firebase:firebase-storage-ktx:20.3.0") // Almacenamiento en Firebase
     implementation("com.google.firebase:firebase-auth-ktx:22.1.0") // Autenticación en Firebase

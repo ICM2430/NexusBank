@@ -102,7 +102,25 @@
         app:layout_constraintStart_toEndOf="@+id/txtName"
         app:layout_constraintTop_toTopOf="@+id/txtName"
         app:layout_constraintWidth_percent="0.44" />
-
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/AmarilloSuave"
+        android:ems="10"
+        android:hint="Nombre de Usuario"
+        android:inputType="text"
+        android:padding="9dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="0dp"
@@ -121,7 +139,7 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
     <EditText
         android:id="@+id/txtPassword"
