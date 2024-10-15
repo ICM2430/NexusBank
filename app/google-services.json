@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616353153569",
+    "project_id": "snaphunters-8967d",
+    "storage_bucket": "snaphunters-8967d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616353153569:android:2a0d594bb51106916d5960",
+        "android_client_info": {
+          "package_name": "com.example.snaphunters"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB16PdbwJsX6fJO8I-cZ1H2u58ITDR5NEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
