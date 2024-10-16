@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-       android:src="@drawable/sheriff" />
+        android:src="@drawable/sheriff" />
 
     <TextView
         android:id="@+id/textView4"
@@ -47,7 +47,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Continuar"
         android:textColor="@color/white"
         android:backgroundTint="@color/AmarilloQuemado"
         app:layout_constraintBottom_toBottomOf="parent"
