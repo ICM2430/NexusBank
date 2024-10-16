@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_crear_partida.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\crear_partida.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_menu.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_compass.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_compass.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_default_profile_icon.jpeg.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\default_profile_icon.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_hombre_con_celular.jpeg.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\hombre_con_celular.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_compass.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\compass.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_person_photo.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\person_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_hunter_info.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_hunter_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_fingerprint_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_fingerprint_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_unirse_partida.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\unirse_partida.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_bounty_hunting_info.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_bounty_hunting_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_yellow_person_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_yellow_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_border_image.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\border_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_people_alt_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_people_alt_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_bounty_hunting.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_bounty_hunting.xml"
+    },
+    {
+        "merged": "com.example.snaphunters.app-debug-41:/layout_activity_login.xml.flat",
+        "source": "com.example.snaphunters.app-main-43:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_hunter.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_hunter.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_friends.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_friends.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\menu_barra_opciones.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\menu\\barra_opciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_paparazzi.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\paparazzi.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_modo_cazador.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\modo_cazador.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_sheriff.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\sheriff.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_custom_input.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\custom_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_location_on_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_location_on_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_espia.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\espia.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\layout_contacts.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_huella.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\huella.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_circle_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_baseline_notifications_24.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\baseline_notifications_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\drawable_caza_recompensas.png.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\drawable\\caza_recompensas.png"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\menu_barra_navegacion.xml.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\menu\\barra_navegacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-debug-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
+    }
+]

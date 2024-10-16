@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">616353153569</string>
+    <string name="google_api_key" translatable="false">AIzaSyB16PdbwJsX6fJO8I-cZ1H2u58ITDR5NEc</string>
+    <string name="google_app_id" translatable="false">1:616353153569:android:2a0d594bb51106916d5960</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB16PdbwJsX6fJO8I-cZ1H2u58ITDR5NEc</string>
+    <string name="google_storage_bucket" translatable="false">snaphunters-8967d.appspot.com</string>
+    <string name="project_id" translatable="false">snaphunters-8967d</string>
+</resources>

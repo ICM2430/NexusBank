@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_maps.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_hunter.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_hunter.xml"
+    },
+    {
+        "merged": "com.example.snaphunters.app-mergeDebugResources-40:/layout/activity_login.xml",
+        "source": "com.example.snaphunters.app-main-43:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_hunter_info.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_hunter_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\contacts.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_friends.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_friends.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_compass.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_compass.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_bounty_hunting_info.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_bounty_hunting_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_bounty_hunting.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_bounty_hunting.xml"
+    },
+    {
+        "merged": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-mergeDebugResources-40:\\layout\\activity_menu.xml",
+        "source": "C:\\Users\\FAM-BARON\\.gradle\\daemon\\8.7\\com.example.snaphunters.app-main-43:\\layout\\activity_menu.xml"
+    }
+]
