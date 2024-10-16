@@ -82,6 +82,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         database = FirebaseDatabase.getInstance()
         auth = FirebaseAuth.getInstance()
 
+        binding.btnCompass.setOnClickListener {
+            val intent = Intent(baseContext, CompassActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.bottomNavigationView.selectedItemId = R.id.maps
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {

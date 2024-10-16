@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">SnapHunters</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_hunter">HunterActivity</string>
+    <string name="title_activity_bounty_hunting">BountyHuntingActivity</string>
 </resources>

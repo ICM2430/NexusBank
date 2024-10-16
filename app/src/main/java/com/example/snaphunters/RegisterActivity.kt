@@ -34,8 +34,14 @@ class RegisterActivity : AppCompatActivity() {
 
 
         binding.btnRegister.setOnClickListener(){
-            validateForm(binding.txtEmail.text.toString(), binding.txtPassword.text.toString())
-            crearUsuario(binding.txtEmail.text.toString(), binding.txtPassword.text.toString())
+            if(validateForm(binding.txtEmail.text.toString(), binding.txtPassword.text.toString())){
+                crearUsuario(binding.txtEmail.text.toString(), binding.txtPassword.text.toString())
+            }else{
+                Toast.makeText(this, "Error en el formulario", Toast.LENGTH_SHORT).show()
+            }
+
+
+
         }
     }
 

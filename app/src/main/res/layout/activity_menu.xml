@@ -10,34 +10,25 @@
 
 
     <ImageView
-        android:id="@+id/btnJugar"
+        android:id="@+id/btnCazador"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/unirse_partida"
+        android:src="@drawable/modo_cazador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
-        android:id="@+id/btnIDK"
+        android:id="@+id/btnCazaRecompensas"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/unirse_partida"
+        android:src="@drawable/caza_recompensas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnJugar" />
-    <ImageView
-        android:id="@+id/btnIDK2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/unirse_partida"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIDK" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCazador" />
 
 
     <TextView

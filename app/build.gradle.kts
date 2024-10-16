@@ -51,6 +51,9 @@ dependencies {
     implementation("com.github.MKergall:osmbonuspack:6.8.0")
     implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation("com.github.bumptech.glide:glide:4.15.0")
+
+    implementation("com.google.code.gson:gson:2.8.8")
+
     implementation(libs.play.services.location)
     implementation(libs.firebase.database.ktx) // Dependencia para cargar imágenes
     kapt("com.github.bumptech.glide:compiler:4.15.0") // Procesador de anotaciones para Glide

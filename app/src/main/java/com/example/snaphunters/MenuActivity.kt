@@ -47,6 +47,18 @@ class MenuActivity : AppCompatActivity() {
 
 
 
+        binding.btnCazador.setOnClickListener {
+            val Intent = Intent(baseContext, HunterInfoActivity::class.java)
+            startActivity(Intent)
+        }
+
+        binding.btnCazaRecompensas.setOnClickListener {
+            val Intent = Intent(baseContext, BountyHuntingInfoActivity::class.java)
+            startActivity(Intent)
+        }
+
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

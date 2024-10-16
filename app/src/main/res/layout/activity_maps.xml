@@ -25,6 +25,16 @@
         app:itemTextColor="@color/black"
         app:itemIconTint="@color/black"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/barra_navegacion"/>
+        app:menu="@menu/barra_navegacion">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/btnCompass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/AmarilloQuemado"
+        android:text="Brujula" />
 
 </FrameLayout>

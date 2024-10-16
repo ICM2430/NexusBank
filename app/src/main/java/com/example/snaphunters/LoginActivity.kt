@@ -68,7 +68,11 @@ class LoginActivity : AppCompatActivity() {
         val biometricManager = BiometricManager.from(this)
         when (biometricManager.canAuthenticate()) {
             BiometricManager.BIOMETRIC_SUCCESS -> {
-                // El dispositivo admite la autenticación biométrica
+
+
+
+
+
             }
             BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE -> {
                 showToast("Este dispositivo no tiene hardware biométrico")
