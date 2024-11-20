@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Azul">
+
+    <LinearLayout
+        android:id="@+id/chatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/AmarilloQuemado"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_keyboard_arrow_left_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Regresar" />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp">
+
+            <ImageView
+                android:id="@+id/PhotoProfileImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/paparazzi"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circular_background"
+                android:contentDescription="Imagen del destinatario" />
+
+            <ImageView
+                android:id="@+id/statusIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/circular_background"
+                android:contentDescription="Estado del destinatario" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/nombreTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del destinatario"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usernameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de usuario"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/statusTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/chatHeader"
+        android:layout_above="@id/messageInputLayout"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/messageInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/Azul"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/mensajeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/AmarilloQuemado"
+            android:hint="Escribe un mensaje"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="5" />
+
+        <ImageButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Enviar mensaje" />
+    </LinearLayout>
+</RelativeLayout>

@@ -52,10 +52,15 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation("com.github.bumptech.glide:glide:4.15.0")
 
+    implementation ("com.google.android.libraries.places:places:2.7.0")
+
     implementation("com.google.code.gson:gson:2.8.8")
 
+    implementation ("com.android.volley:volley:1.2.1")
+
     implementation(libs.play.services.location)
-    implementation(libs.firebase.database.ktx) // Dependencia para cargar imágenes
+    implementation(libs.firebase.database.ktx)
+    implementation(libs.androidx.tools.core) // Dependencia para cargar imágenes
     kapt("com.github.bumptech.glide:compiler:4.15.0") // Procesador de anotaciones para Glide
     implementation("com.google.firebase:firebase-storage-ktx:20.3.0") // Almacenamiento en Firebase
     implementation("com.google.firebase:firebase-auth-ktx:22.1.0") // Autenticación en Firebase

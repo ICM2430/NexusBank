@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Azul"
+    android:padding="30dp"
+    tools:context=".PhotoActivity">
+
+    <TextView
+        android:id="@+id/avisoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="¡Uno de los jugadores ha encontrado a alguien!"
+        android:textAlignment="center"
+        android:textColor="@color/AmarilloQuemado"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preguntaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Este eres tú?"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avisoTxt" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person_photo"
+        app:layout_constraintTop_toBottomOf="@id/preguntaTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/siBtn"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/siBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sí"
+        android:backgroundTint="@color/AmarilloQuemado"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/noBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/noBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:backgroundTint="@color/AmarilloQuemado"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imageView5"
+        app:layout_constraintStart_toEndOf="@id/siBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

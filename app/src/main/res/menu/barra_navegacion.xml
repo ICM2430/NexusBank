@@ -2,19 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="Amigos"
-        android:icon="@drawable/baseline_people_alt_24"
-        android:id="@+id/friends"/>
+        android:title="Ubicación"
+        android:icon="@drawable/baseline_location_on_24"
+        android:id="@+id/maps"/>
 
     <item
         android:title="Menu"
         android:icon="@drawable/baseline_home_24"
         android:id="@+id/menu"/>
 
-    <item
-        android:title="Ubicación"
-        android:icon="@drawable/baseline_location_on_24"
-        android:id="@+id/maps"/>
 
     <item
         android:title="Perfil"

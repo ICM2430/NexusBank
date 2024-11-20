@@ -106,10 +106,6 @@ class ProfileActivity : AppCompatActivity() {
         binding.bottomNavigationView.selectedItemId = R.id.profile
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.friends -> {
-                    startActivity(Intent(this, FriendsActivity::class.java))
-                    true
-                }
                 R.id.menu -> {
                     startActivity(Intent(this, MenuActivity::class.java))
                     true
@@ -169,14 +165,14 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     fun readOnce() {
-        val userRef = database.getReference("users").child(auth.currentUser?.uid.toString())
+        val userRef = database.getReference("usuarios").child(auth.currentUser?.uid.toString())
         userRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()) {
-                    val name = snapshot.child("name").getValue(String::class.java)
-                    val lastname = snapshot.child("lastname").getValue(String::class.java)
-                    val username = snapshot.child("username").getValue(String::class.java)
+                    val name = snapshot.child("nombre").getValue(String::class.java)
+                    val lastname = snapshot.child("apellido").getValue(String::class.java)
+                    val username = snapshot.child("usuario").getValue(String::class.java)
 
                     binding.nombreUsuario.text = name + " " + lastname
                     binding.username.text = username

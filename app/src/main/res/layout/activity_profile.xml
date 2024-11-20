@@ -23,15 +23,14 @@
         android:src="@drawable/person_photo" />
 
 
-
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Username"
-        android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textColor="@color/AmarilloQuemado"
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -40,35 +39,34 @@
         android:id="@+id/nombreUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Nombre "
+        android:text="Nombre"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
+
     <TextView
         android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="correo"
-        android:textColor="@color/gris"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario" />
 
     <Button
         android:id="@+id/btnLogOut"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="150dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/Rojo"
         android:text="Cerrar Sesión"
+        android:textSize="20dp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"

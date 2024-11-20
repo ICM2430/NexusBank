@@ -3,4 +3,11 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_hunter">HunterActivity</string>
     <string name="title_activity_bounty_hunting">BountyHuntingActivity</string>
+    <string name="title_activity_maps_hunter">MapsHunterActivity</string>
+    <string name="title_activity_maps_bounty_hunting">MapsBountyHuntingActivity</string>
+
+
+        <string name="google_maps_key">AIzaSyBHdxmOsTOeE3Ko6m5ZVIZF14mnwH3hZ5Y</string>
+
+
 </resources>

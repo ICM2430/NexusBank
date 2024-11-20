@@ -1,41 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="10dp">
+    android:padding="16dp">
 
+    <FrameLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_weight="2"
-        android:src="@drawable/baseline_yellow_person_24" />
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_person_24"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circular_background"
+            android:contentDescription="Imagen del usuario" />
+
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/circular_background"
+            android:contentDescription="Estado del usuario" />
+    </FrameLayout>
 
     <TextView
-        android:id="@+id/idContacto"
+        android:id="@+id/user_name"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:gravity="center"
         android:textColor="@color/white"
-        android:text="t" />
+        android:textAlignment="center"
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/nombre"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:paddingStart="20dp"
-        android:textAlignment="viewStart"
-        android:layout_weight="7"
+    <Button
+        android:id="@+id/view_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar mensaje"
         android:textColor="@color/white"
-        android:text="TextView"
-        android:gravity="start|center_vertical" />
-
-
+        android:textStyle="bold"
+        android:backgroundTint="@color/AmarilloQuemado"
+        />
 </LinearLayout>

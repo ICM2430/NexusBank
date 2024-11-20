@@ -22,11 +22,6 @@ class MenuActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.friends -> {
-                    val Intent = Intent(baseContext, FriendsActivity::class.java)
-                    startActivity(Intent)
-                    false
-                }
                 R.id.menu -> {
                     true
                 }
@@ -54,6 +49,11 @@ class MenuActivity : AppCompatActivity() {
 
         binding.btnCazaRecompensas.setOnClickListener {
             val Intent = Intent(baseContext, BountyHuntingInfoActivity::class.java)
+            startActivity(Intent)
+        }
+
+        binding.btnJugadores.setOnClickListener() {
+            val Intent = Intent(baseContext, FriendsActivity::class.java)
             startActivity(Intent)
         }
 

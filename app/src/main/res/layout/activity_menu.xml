@@ -8,29 +8,6 @@
     tools:context=".MenuActivity"
     android:background="@color/Azul">
 
-
-    <ImageView
-        android:id="@+id/btnCazador"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/modo_cazador"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/btnCazaRecompensas"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/caza_recompensas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCazador" />
-
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -44,7 +21,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/btnCazador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/modo_cazador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@id/btnCazaRecompensas"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
 
+    <ImageView
+        android:id="@+id/btnCazaRecompensas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/caza_recompensas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCazador"
+        app:layout_constraintBottom_toTopOf="@id/btnJugadores"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/btnJugadores"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btnjugadores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCazaRecompensas"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -57,7 +74,6 @@
         app:menu="@menu/barra_navegacion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

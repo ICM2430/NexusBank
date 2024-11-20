@@ -5,8 +5,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="15dp">
-
+  >
 
 
     <fragment
@@ -14,6 +13,13 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -29,10 +35,12 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+
     <Button
         android:id="@+id/btnCompass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
         android:textColor="@color/white"
         android:backgroundTint="@color/AmarilloQuemado"
         android:text="Brujula" />

@@ -6,7 +6,15 @@
     <color name="Azul">#242331</color>
     <color name="AmarilloSuave">#FFF2D0</color>
     <color name="Rojo">#FF4343</color>
-    <color name="gris">#A9A9A9</color>
+    <color name="gris">#383444</color>
+    <color name="Verde">#4CAF50</color>
+    <color name="GrisOscuro">#D9D9D9</color>
+
+
+
+
+
+
 
 
 </resources>

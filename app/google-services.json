@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "616353153569",
-    "project_id": "snaphunters-8967d",
-    "storage_bucket": "snaphunters-8967d.appspot.com"
+    "project_number": "6424245354",
+    "firebase_url": "https://taller-3-4310e-default-rtdb.firebaseio.com",
+    "project_id": "taller-3-4310e",
+    "storage_bucket": "taller-3-4310e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:616353153569:android:2a0d594bb51106916d5960",
+        "mobilesdk_app_id": "1:6424245354:android:c4d4404f966d165d200613",
         "android_client_info": {
           "package_name": "com.example.snaphunters"
         }
@@ -15,7 +16,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB16PdbwJsX6fJO8I-cZ1H2u58ITDR5NEc"
+          "current_key": "AIzaSyDjPHLrqZXZo0jm-CMDgUd0Dk8ctU06dBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6424245354:android:443025bd4323feb6200613",
+        "android_client_info": {
+          "package_name": "com.example.taller3_mb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjPHLrqZXZo0jm-CMDgUd0Dk8ctU06dBc"
         }
       ],
       "services": {
